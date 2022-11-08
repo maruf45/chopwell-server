@@ -10,8 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connect
-const uri =
-  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fkczj.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fkczj.mongodb.net/?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
@@ -21,14 +20,20 @@ const client = new MongoClient(uri, {
 
 const database = async () => {
   try {
-
+    const database = client.db("servicesCollection")
+    const blogs = database.collection("blogs");
+    app.get("/blogs", async(req, res) => {
+      const query = {};
+      const cursor = blogs.find(query);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
   } catch {}
 };
 
 database().catch((error) => {
   console.log(error);
 });
-
 
 // Create API
 app.get("/", (req, res) => {
