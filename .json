@@ -1,18 +1,44 @@
 [
     {
-        "question": "Difference between SQL and NoSQL?",
-        "answer": "SQL is the programming language used to interface with relational databases. (Relational databases model data as records in rows and tables with logical links between them). NoSQL is a class of DBMs that are non-relational and generally do not use SQL."
+        "food_type": "Doughnuts",
+        "food_recipe": "Indulge in delicious homemade doughnuts anytime with this easy-to-follow recipe. You'll find the full recipe below with step-by-step instructions, but here's what you can expect when you make this top-rated recipe Start by sprinkling yeast over warm water to activate, then add flour, sugar, salt, milk, shortening, and eggs to create the dough. Knead the dough until smooth, cover it, and allow it to rise until doubled in size. Roll the dough out to a ½ inch thickness before using a doughnut cutter to create a shape. Let the doughnuts rise a second time before deep-frying and glazing.",
+        "food_img": "https://i.ibb.co/FxSVNm7/1.jpg",
+        "food_icon": "https://i.ibb.co/NxzNXM2/1.png",
+        "food_price": "50"
     },
     {
-        "question": "What is JWT, and how does it work?",
-        "answer": "What is JWT (JSON Web Token)? JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object. It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP)"
+        "food_type": "Muffin",
+        "food_recipe": "The muffin method, also know as the muffin mixing method, refers to a standard procedure of mixing ingredients together in a specific order. (This is the basic method used in nearly all quick breads.) For muffins, the dry ingredients are whisked together in a large mixing bowl, while the wet ingredients are mixed together in another bowl or measuring cup before the two are added to each other. The muffin method also requires that the wet ingredients be added to the dry ingredients, never the other way around, and mixed gingerly. Once the wet mixture meets the dry mixture, work to quickly but efficiently combine the two, as not to develop too much gluten in the batter (too much gluten equals tough muffins). Some lumps are welcome, especially as fruit, nuts, cheese, or chocolate chips will be added to the batter after mixing.",
+        "food_img": "https://i.ibb.co/FxSVNm7/2.jpg",
+        "food_icon": "https://i.ibb.co/NxzNXM2/2.png",
+        "food_price": "10"
     },
     {
-        "question": "What is the difference between javascript and Node JS?",
-        "answer": "JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine installed. Node. js, on the other hand, is an interpreter or execution environment for the JavaScript programming language."
+        "food_type": "Bun",
+        "food_recipe": "Stir 2 cups flour and yeast together in a large bowl. Heat milk, water, oil, sugar, and salt together in a microwave-safe bowl in the microwave until lukewarm; add to flour mixture and beat until smooth, about 3 minutes. Mix in 2 cups remaining flour, then add up to 1 cup more flour as necessary to make a soft dough. Dust a flat surface with flour; turn dough out onto floured surface and let rest under a bowl for about 10 minutes. Meanwhile, lightly grease a baking sheet.Shape dough into 12 slightly flat balls and place on the prepared baking sheet to rise until doubled in size.",
+        "food_img": "https://i.ibb.co/FxSVNm7/3.jpg",
+        "food_icon": "https://i.ibb.co/NxzNXM2/3.png",
+        "food_price": "30"
     },
     {
-        "question": "How does Node JS handle multiple requests at the same time?",
-        "answer": "How NodeJS handle multiple client requests? NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes them."
+        "food_type": "Cup Cake",
+        "food_recipe": "If you've ever thought your cupcakes came out a different each time it may be the way you are measuring your ingredients! A scale is always the most accurate and reliable, but we understand you may not have one or know the gram conversions for each ingredient. Flour is the biggest ingredient to make sure you are measuring correctly and we always recommend the scoop and level technique. Instead of just dipping your measuring cup into the flour, spoon flour into the cup without packing. Once the cup is full use the back of a nice with a straight edge and level off the top of the measuring cup. Easy! Speaking of measuring cups, make sure you are using the right ones. Dry ingredients should be measured with those metal or porcelain cups that are sold in sets. The glass measuring cups with spouts are designed for liquid ingredients and should only be used for them! ",
+        "food_img": "https://i.ibb.co/FxSVNm7/4.jpg",
+        "food_icon": "https://i.ibb.co/NxzNXM2/4.png",
+        "food_price": "60"
+    },
+    {
+        "food_type": "Cream Doughnuts",
+        "food_recipe": "Fresh Cream Doughnuts are cylindrical doughnuts (shaped like hot dog rolls) with a cream filling -  occasionally topped with jam or cherries. I can’t think of many childhood memories that didn’t include fresh cream doughnuts - early childhood memories of doughnuts in the supermarket we once owned-the ones we got on School Sports Day and the lingering smell of Amma’s jam doughnuts when we got home from school. Amma usually made ring doughnuts dipped in syrup or coconut and usually filled cylindrical ones with jam or butter cream icing.The recipe shared here is from scratch...without a mixer or doughnut trays...just like Amma used to make it! Warm the milk then add sugar until dissolved. Combine this with the instant yeast. Cover and leave aside for 5-7 minutes. Sift the flour.Add nutmeg. Add the butter to form fine breadcrumbs. Use a pastry cutter of knife to form fine crumbs.  Combine the egg and milk mixture with the flour to form a soft pliable dough. If the dough appears a little sticky...keep kneading- don't add any additional flour as this will make the dough too hard. Doughnuts should have a soft texture. Knead continuously for 10 minutes to ensure that the yeast is combined with the flour. Cover and leave aside in a warm place for 1 hour.",
+        "food_img": "https://i.ibb.co/FxSVNm7/5.jpg",
+        "food_icon": "https://i.ibb.co/NxzNXM2/5.png",
+        "food_price": "80"
+    },
+    {
+        "food_type": "Bread",
+        "food_recipe": "Easy Bread recipe  made with simple ingredients & detailed instructions showing how to make bread! Best homemade bread recipe for both beginners and expert bakers. If you love Bread as much as we do, find all of our Best Bread Recipes Here! Homemade Bread is one of my favorite foods of all time. Can you tell by the name of this site?! There really is nothing quite like a warm slice of fresh bread served with a thick pat of butter on top. Mmmmm! This recipe is perfect. It’s simple to follow, takes about 2 hours to make and yields 2 loaves of wonderful bread. It’s quite versatile too, so feel free to use part whole wheat flour if you’d like. Brush butter on top when it’s out of the oven and partially cooled and everyone will thank you. Easy Bread recipe  made with simple ingredients & detailed instructions showing how to make bread! Best homemade bread recipe for both beginners and expert bakers. YES, YOU CAN MAKE THIS RECIPE IN A BREAD MACHINE! SCROLL DOWN TO SEE FULL HOMEMADE BREAD RECIPE AND INGREDIENTS, WITH PRINTABLE INSTRUCTIONS FOR YOUR BREAD MACHINE. I love to cook and I am a pretty confident baker, however, one thing I’ve struggled with is finding a really incredible bread recipe. I know- kind of funny being as there are a zillion out there and bread is one of those ‘basics” that almost anyone can make themselves. Nevertheless, I keep trying new recipes and have finally found one I really like and have gotten good results from! Even better- it’s easy and from start to finish it takes just over 2 hours! ",
+        "food_img": "https://i.ibb.co/FxSVNm7/6.jpg",
+        "food_icon": "https://i.ibb.co/NxzNXM2/6.png",
+        "food_price": "15"
     }
 ]

@@ -1,5 +1,5 @@
 const express = require("express");
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 require("dotenv").config();
 const app = express();
 const cors = require("cors");
@@ -20,14 +20,44 @@ const client = new MongoClient(uri, {
 
 const database = async () => {
   try {
-    const database = client.db("servicesCollection")
+    const database = client.db("servicesCollection");
     const blogs = database.collection("blogs");
-    app.get("/blogs", async(req, res) => {
+    const services = database.collection("services");
+    const review = database.collection('review');
+    // getting blogs api from database
+    app.get("/blogs", async (req, res) => {
       const query = {};
       const cursor = blogs.find(query);
       const result = await cursor.toArray();
       res.send(result);
     });
+    // getting food services api from database
+    app.get("/services", async (req, res) => {
+      const serviceQuery = parseInt(req.query.size);
+      const query = {};
+      if (serviceQuery <= 6) {
+        const cursor = services.find(query).limit(serviceQuery);
+        const result = await cursor.toArray();
+        res.send(result);
+      }else{
+          const cursor = services.find(query).limit(3);
+          const result = await cursor.toArray();
+          res.send(result);
+      }
+    });
+    // specific service api 
+    app.get('/:service/:id', async(req, res) =>{
+        const serviceId = req.params.id;
+        const query = {_id: ObjectId(serviceId)};
+        const result = await services.findOne(query);
+        res.send(result);
+    })
+    // post services review
+    app.post('/review', async(req, res)=> {
+      const review = req.body;
+      const result = await review.insertOne(review)
+      res.send(result);
+    })
   } catch {}
 };
 
